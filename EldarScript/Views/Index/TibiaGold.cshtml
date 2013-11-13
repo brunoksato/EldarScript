@@ -1,0 +1,662 @@
+﻿@{
+    ViewBag.Title = "TibiaGold";
+}
+
+@* List Gold Alter *@
+
+@{
+    var Aldora = "0";
+    var Amera = "0";
+    var Antica = "0";
+    var Arcania = "0";
+    var Askara = "0";
+    var Astera = "0";
+    var Aurea = "0";
+    var Aurera = "0";
+    var Aurora = "0";
+    var Azura = "0";
+    var Balera = "0";
+    var Berylia = "0";
+    var Calmera = "0";
+    var Candia = "0";
+    var Celesta = "0";
+    var Chimera = "0";
+    var Danera = "0";
+    var Danubia = "0";
+    var Dolera = "0";
+    var Elera = "0";
+    var Elysia = "0";
+    var Empera = "0";
+    var Eternia = "0";
+    var Fidera = "0";
+    var Fortera = "0";
+    var Furora = "0";
+    var Galana = "0";
+    var Grimera = "0";
+    var Guardia = "0";
+    var Harmonia = "0";
+    var Hiberna = "0";
+    var Honera = "0";
+    var Inferna = "0";
+    var Iridia = "0";
+    var Isara = "0";
+    var Jamera = "0";
+    var Julera = "0";
+    var Keltera = "0";
+    var Kyra = "0";
+    var Libera = "0";
+    var Lucera = "0";
+    var Luminera = "0";
+    var Lunara = "0";
+    var Magera = "0";
+    var Malvera = "0";
+    var Menera = "0";
+    var Morgana = "0";
+    var Mythera = "0";
+    var Nebula = "0";
+    var Neptera = "0";
+    var Nerana = "0";
+    var Nova = "0";
+    var Obsidia = "0";
+    var Ocera = "0";
+    var Olympa = "0";
+    var Pacera = "0";
+    var Pandoria = "0";
+    var Premia = "0";
+    var Pythera = "0";
+    var Refugia = "0";
+    var Rubera = "0";
+    var Samera = "0";
+    var Saphira = "0";
+    var Secura = "0";
+    var Selena = "0";
+    var Shanera = "0";
+    var Shivera = "0";
+    var Silvera = "0";
+    var Solera = "0";
+    var Tenebra = "0";
+    var Thoria = "0";
+    var Titania = "0";
+    var Trimera = "0";
+    var Unitera = "0";
+    var Valoria = "0";
+    var Vinera = "0";
+    var Xantera = "0";
+    var Xerena = "0";
+    var Zanera = "0";
+}
+
+<div class="wrapper">
+    <br />
+    <br />
+    <div id="goldlist">
+        <table>
+            <thead>
+                <tr>
+                    <td>Server name</td>
+                    <td>Server location</td>
+                    <td>Server type</td>
+                    <td>Status</td>
+                    <td>Gold amount</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="odd">
+                    <td>Aldora</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Aldora</td>
+                </tr>
+                <tr class="even">
+                    <td>Amera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Amera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Antica</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Antica</td>
+                </tr>
+                <tr class="even">
+                    <td>Arcania</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Arcania</td>
+                </tr>
+                <tr class="odd">
+                    <td>Askara</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Askara</td>
+                </tr>
+                <tr class="even">
+                    <td>Astera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Astera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Aurea</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br><span class="orange">High transfers from this world may be rejected!</span></td>
+                    <td class="righttext">@Aurea</td>
+                </tr>
+                <tr class="even">
+                    <td>Aurera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Preview</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Aurera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Aurora</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Preview</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Aurora</td>
+                </tr>
+                <tr class="even">
+                    <td>Azura</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Azura</td>
+                </tr>
+                <tr class="odd">
+                    <td>Balera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Balera</td>
+                </tr>
+                <tr class="even">
+                    <td>Berylia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Berylia</td>
+                </tr>
+                <tr class="odd">
+                    <td>Calmera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="red">Transfers to this world are currently blocked!</span><br><span class="orange">High transfers from this world may be rejected!</span></td>
+                    <td class="righttext">@Calmera</td>
+                </tr>
+                <tr class="even">
+                    <td>Candia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Candia</td>
+                </tr>
+                <tr class="odd">
+                    <td>Celesta</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Celesta</td>
+                </tr>
+                <tr class="even">
+                    <td>Chimera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br><span class="orange">High transfers from this world may be rejected!</span></td>
+                    <td class="righttext">@Chimera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Danera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Danera</td>
+                </tr>
+                <tr class="even">
+                    <td>Danubia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="red">Transfers to this world are currently blocked!</span><br></td>
+                    <td class="righttext">@Danubia</td>
+                </tr>
+                <tr class="odd">
+                    <td>Dolera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Hardcore-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Dolera</td>
+                </tr>
+                <tr class="even">
+                    <td>Elera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Elera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Elysia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Elysia</td>
+                </tr>
+                <tr class="even">
+                    <td>Empera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Empera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Eternia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Eternia</td>
+                </tr>
+                <tr class="even">
+                    <td>Fidera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Fidera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Fortera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Fortera</td>
+                </tr>
+                <tr class="even">
+                    <td>Furora</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Furora</td>
+                </tr>
+                <tr class="odd">
+                    <td>Galana</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Galana</td>
+                </tr>
+                <tr class="even">
+                    <td>Grimera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Grimera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Guardia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br><span class="orange">High transfers from this world may be rejected!</span></td>
+                    <td class="righttext">@Guardia</td>
+                </tr>
+                <tr class="even">
+                    <td>Harmonia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Harmonia</td>
+                </tr>
+                <tr class="odd">
+                    <td>Hiberna</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br><span class="orange">High transfers from this world may be rejected!</span></td>
+                    <td class="righttext">@Hiberna</td>
+                </tr>
+                <tr class="even">
+                    <td>Honera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Honera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Inferna</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Hardcore-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Inferna</td>
+                </tr>
+                <tr class="even">
+                    <td>Iridia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Iridia</td>
+                </tr>
+                <tr class="odd">
+                    <td>Isara</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br><span class="orange">High transfers from this world may be rejected!</span></td>
+                    <td class="righttext">@Isara</td>
+                </tr>
+                <tr class="even">
+                    <td>Jamera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Jamera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Julera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Julera</td>
+                </tr>
+                <tr class="even">
+                    <td>Keltera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Keltera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Kyra</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Kyra</td>
+                </tr>
+                <tr class="even">
+                    <td>Libera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Libera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Lucera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Lucera</td>
+                </tr>
+                <tr class="even">
+                    <td>Luminera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Luminera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Lunara</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Lunara</td>
+                </tr>
+                <tr class="even">
+                    <td>Magera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Magera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Malvera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Malvera</td>
+                </tr>
+                <tr class="even">
+                    <td>Menera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Menera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Morgana</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Morgana</td>
+                </tr>
+                <tr class="even">
+                    <td>Mythera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Mythera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Nebula</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br><span class="orange">High transfers from this world may be rejected!</span></td>
+                    <td class="righttext">@Nebula</td>
+                </tr>
+                <tr class="even">
+                    <td>Neptera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Neptera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Nerana</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Nerana</td>
+                </tr>
+                <tr class="even">
+                    <td>Nova</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Nova</td>
+                </tr>
+                <tr class="odd">
+                    <td>Obsidia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Obsidia</td>
+                </tr>
+                <tr class="even">
+                    <td>Ocera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Ocera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Olympa</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Olympa</td>
+                </tr>
+                <tr class="even">
+                    <td>Pacera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Pacera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Pandoria</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Pandoria</td>
+                </tr>
+                <tr class="even">
+                    <td>Premia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Premia</td>
+                </tr>
+                <tr class="odd">
+                    <td>Pythera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Pythera</td>
+                </tr>
+                <tr class="even">
+                    <td>Refugia</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Refugia</td>
+                </tr>
+                <tr class="odd">
+                    <td>Rubera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Rubera</td>
+                </tr>
+                <tr class="even">
+                    <td>Samera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Samera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Saphira</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Saphira</td>
+                </tr>
+                <tr class="even">
+                    <td>Secura</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Secura</td>
+                </tr>
+                <tr class="odd">
+                    <td>Selena</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Selena</td>
+                </tr>
+                <tr class="even">
+                    <td>Shanera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Shanera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Shivera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Shivera</td>
+                </tr>
+                <tr class="even">
+                    <td>Silvera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Silvera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Solera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Solera</td>
+                </tr>
+                <tr class="even">
+                    <td>Tenebra</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Tenebra</td>
+                </tr>
+                <tr class="odd">
+                    <td>Thoria</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Thoria</td>
+                </tr>
+                <tr class="even">
+                    <td>Titania</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Titania</td>
+                </tr>
+                <tr class="odd">
+                    <td>Trimera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Trimera</td>
+                </tr>
+                <tr class="even">
+                    <td>Unitera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Optional-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Unitera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Valoria</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Valoria</td>
+                </tr>
+                <tr class="even">
+                    <td>Vinera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="red">Transfers from this world are currently blocked!</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Vinera</td>
+                </tr>
+                <tr class="odd">
+                    <td>Xantera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Xantera</td>
+                </tr>
+                <tr class="even">
+                    <td>Xerena</td>
+                    <td><img alt="Eu" src="~/Content/Imagens/europa.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Xerena</td>
+                </tr>
+                <tr class="odd">
+                    <td>Zanera</td>
+                    <td><img alt="Us" src="~/Content/Imagens/eua.png"></td>
+                    <td>Open-PvP</td>
+                    <td class="smalltext"><span class="gray">Transfers from this world are possible.</span><br><span class="gray">Transfers to this world are possible.</span><br></td>
+                    <td class="righttext">@Zanera</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+    <br />
+</div>

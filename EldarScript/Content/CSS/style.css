@@ -1,0 +1,465 @@
+﻿/*Altere estes valores de acordo com a largura das colunas, largura das margens e o n�mero de colunas do seu grid.*/
+/*Delete a linha abaixo se desejar trabalhar com valores em pixel.*/
+body {
+    width: 100%;
+    *zoom: 1;
+    margin: 0;
+    padding: 0;
+    font: normal 14px/20px Arial,Helvetica,sans-serif;
+    color: #6E6E6E;
+}
+
+    body:before,
+    body:after {
+        content: "";
+        display: table;
+    }
+
+    body:after {
+        clear: both;
+    }
+/*Determine a largura do seu container.*/
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+/*Pagina*/
+#toolbar {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+    background: #2c97b7;
+    background: -moz-radial-gradient(10% 0%, #e0e1e2 0%, #2c97b7 0%, #e0e1e2 100%);
+    background: -webkit-radial-gradient(50% 0%, #e0e1e2 0%, #2c97b7 0%, #d4d4d4 100%);
+    /*background: #03273d;
+    background: -moz-radial-gradient(30% 0%, #F7F7F7 0%, #165984 50%, #E0E1E2 100%);
+    background: -webkit-radial-gradient(10% 10%, #F7F7F7 0%, #165984 30%, #d4d4d4 100%);*/
+    height: 60px;
+    -webkit-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    color: #D5D5D5;
+}
+
+    #toolbar ul {
+        list-style: none;
+        overflow: hidden;
+    }
+
+        #toolbar ul li {
+            display: block;
+            float: left;
+            text-decoration: none;
+            height: 20px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+        }
+
+            #toolbar ul li a {
+                color: #fff;
+                text-decoration: none;
+                outline: 0;
+            }
+
+                #toolbar ul li a :hover {
+                    color: #e0dfdf;
+                }
+
+#header {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+    border-bottom: 1px solid #fff;
+    background: #808080;
+    background: -moz-radial-gradient(50% 0%, #f7f7f7 0%, #efeff0 50%, #e0e1e2 100%);
+    background: -webkit-radial-gradient(50% 0%, #f7f7f7 0%, #efeff0 50%, #d4d4d4 100%);
+    height: 150px;
+    position: relative;
+}
+
+#top {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#main {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+    /*padding: 30px 0 15px 0;*/
+    border-bottom: 1px solid #fff;
+    background: #FCFCFC;
+    height: 100%;
+    position: relative;
+}
+
+#footer {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 0%;
+    background: url(/Content/Imagens/back_footer.png);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    height: 150px;
+    bottom: 0;
+    position: relative;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.mod-box {
+    padding: 15px;
+    border: 1px solid #fff;
+    box-shadow: 0 1px 0 #ffffff, 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    background: #F5F5F5;
+    background: -moz-linear-gradient(top, #f2f2f2 0%, #eeeeee 100%);
+    background: -webkit-linear-gradient(top, #f2f2f2 0%, #eeeeee 100%);
+    border-radius: 5px;
+}
+
+.mod-box-color {
+    color: #F5F5F5;
+    border-color: #fff;
+    background: #2c97b7;
+    background: -moz-linear-gradient(top, #2c97b7 0%, #2988b6 100%);
+    background: -webkit-linear-gradient(top, #2c97b7 0%, #2988b6 100%);
+    -webkit-text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.module {
+    position: relative;
+}
+
+    .module .module-title {
+        font-size: 24px;
+        line-height: 24px;
+        margin: 0 0 15px 0;
+    }
+
+.line {
+    margin-bottom: 6px;
+    padding-bottom: 9px;
+    background: url(/Content/Imagens/line.png) 0 100% repeat-x;
+}
+
+.button {
+    border-radius: 5px;
+    height: 25px;
+    width: 500px;
+    border: 1px solid lightgray;
+}
+
+    .button:hover {
+        border-radius: 5px;
+        height: 25px;
+        width: 500px;
+        border: 1px solid lightblue;
+    }
+
+    .button:focus {
+        border-radius: 5px;
+        height: 25px;
+        width: 500px;
+        border: 1px solid lightblue;
+    }
+
+.button2 {
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
+    border: 1px solid lightgray;
+}
+
+    .button2:hover {
+        border-radius: 5px;
+        height: 35px;
+        width: 200px;
+        border: 1px solid lightblue;
+    }
+
+#menu ul {
+    list-style: none;
+    float: left;
+}
+
+    #menu ul li {
+        position: relative;
+        float: left;
+        height: 25px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        padding-top: 45px;
+    }
+
+        #menu ul li a {
+            font-size: 1.3em;
+            color: #575656;
+            text-decoration: none;
+            padding: 5px 0px;
+            font-family: 'Lucida Sans';
+            font-size: 18px;
+        }
+
+            #menu ul li a:hover {
+                color: #575656;
+                border-radius: 2px;
+                color: #2c97b7;
+            }
+
+        #menu ul li ul {
+            position: absolute;
+            top: 75px;
+            left: 2px;
+            padding: 0px 25px 25px 25px;
+            border: 1px solid #fff;
+            border-top: none;
+            background: #F5F5F5;
+            background: -moz-linear-gradient(top, #F5F5F5 0%,#F8F8F8 100%);
+            background: -webkit-linear-gradient(top, #F5F5F5 0%, #F8F8F8 100%);
+            box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+            display: none;
+        }
+
+        #menu ul li:hover ul ul {
+            display: none;
+        }
+
+        #menu ul li:hover ul, #menu ul li ul li:hover ul, #menu ul li.over ul, #menu ul li ul li.over ul {
+            display: block;
+            z-index: 99999;
+        }
+
+        #menu ul li ul li {
+            display: block;
+            width: 130px;
+            height: 5px;
+        }
+
+li.border0 {
+    border: 0;
+}
+
+#menu ul li ul li ul {
+    z-index: 99999;
+    top: 0;
+    left: 90px;
+}
+
+#goldlist {
+    width: 900px;
+    margin: 10px auto;
+    border: 1px solid #888888;
+    border-radius: 5px 5px 0 0;
+}
+
+    #goldlist table {
+        width: inherit;
+        text-align: center;
+        border-collapse: collapse;
+        border-spacing: 2px;
+        border-color: gray;
+        display: table;
+    }
+
+    #goldlist thead {
+        font-weight: bold;
+        display: table-header-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+
+
+    #goldlist tr {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+    }
+
+    #goldlist td {
+        padding: 10px;
+    }
+
+    #goldlist .odd {
+        background-color: #ccc;
+    }
+
+    #goldlist .even {
+        background-color: #bbb;
+    }
+
+    #goldlist .smalltext {
+        font-size: 12px;
+    }
+
+    #goldlist .righttext {
+        text-align: right;
+    }
+
+    #goldlist .red {
+        color: darkred;
+    }
+
+    #goldlist .gray {
+        color: #666;
+    }
+
+/*Scripts*/
+
+.grid-box {
+float: left;
+width:980px;
+}
+
+.module {
+position: relative;
+margin-top: 15px;
+min-height:15px;
+}
+
+#maininner {
+width: 980px;
+}
+
+.width100 {
+width: 100%;
+}
+
+wk-accordion .toggler {
+margin: 0;
+cursor: pointer;
+}
+
+wk-accordion .toggler:hover {
+margin: 0;
+cursor: pointer;
+}
+
+.wk-accordion-default {
+margin-bottom: -10px;
+}
+
+.deepest>*:first-child {
+margin-top: 0;
+}
+
+.deepest>*:last-child {
+margin-bottom: 0;
+}
+
+.wk-accordion-default .toggler {
+margin-bottom: 10px;
+padding: 20px;
+border: 1px solid #ddd;
+/*background:url(/Content/Imagens/ek.png) 0 0 no-repeat;*/
+background: -moz-linear-gradient(top, #FAFAFA 0%, #F5F5F5 100%);
+background: -webkit-linear-gradient(top, #FAFAFA 0%, #F5F5F5 100%);
+background: -o-linear-gradient(top, #FAFAFA 0%, #F5F5F5 100%);
+border-radius: 5px;
+box-shadow: 0 1px 0 #fff inset;
+text-shadow: 0 1px 0 #fff;
+cursor: pointer;
+}
+
+.wk-accordion-default-ek .toggler {
+margin-bottom: 0px;
+padding: 40px;
+background:url(/Content/Imagens/ek.png) 0 0 no-repeat;
+border-radius: 5px;
+box-shadow: 0 1px 0 #fff inset;
+text-shadow: 0 1px 0 #fff;
+cursor: pointer;
+}
+
+.wk-accordion-default-rp .toggler {
+margin-bottom: 0px;
+padding: 40px;
+background:url(/Content/Imagens/rp.png) 0 0 no-repeat;
+border-radius: 5px;
+box-shadow: 0 1px 0 #fff inset;
+text-shadow: 0 1px 0 #fff;
+cursor: pointer;
+}
+
+.wk-accordion-default-ed .toggler {
+margin-bottom: 0px;
+padding: 40px;
+background:url(/Content/Imagens/ed.png) 0 0 no-repeat;
+border-radius: 5px;
+box-shadow: 0 1px 0 #fff inset;
+text-shadow: 0 1px 0 #fff;
+cursor: pointer;
+}
+
+.wk-accordion-default-ms .toggler {
+margin-bottom: 0px;
+padding: 40px;
+background:url(/Content/Imagens/ms.png) 0 0 no-repeat;
+border-radius: 5px;
+box-shadow: 0 1px 0 #fff inset;
+text-shadow: 0 1px 0 #fff;
+cursor: pointer;
+}
+
+wk-accordion .toggler {
+margin: 0;
+cursor: pointer;
+}
+
+.wk-accordion-default .content {
+padding: 10px;
+}
+
+.wk-content>*:first-child {
+margin-top: 0;
+}
+
+.box-download {
+background: #fff 
+border-color: #fff;
+}
+
+ul.blank, ul.space, ul.line, ul.check, ul.zebra {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+ul.zebra > li:nth-of-type(odd), table.zebra tbody tr:nth-of-type(odd) {
+background: #F4F4F4;
+}
+
+ul.zebra > li:first-child, table.zebra tbody tr:first-child td {
+border-top: 1px solid #ddd;
+}
+
+ul.zebra > li, table.zebra tbody td {
+border-bottom: 1px solid #ddd;
+}
+
+ul.zebra>li {
+padding: 5px;
+}
+
+ul.zebra li a{
+    color: #349BBC;
+}
+
+li, ul, ol{
+    list-style:none;
+    
+}
